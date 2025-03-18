@@ -1,16 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <title>Nicolás Gómez</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Nicolás Gómez - CV</title>
+  <style>
+    /* Estilos para impresión */
+    @page {
+      size: letter;
+      margin: 2cm;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      max-width: 21.6cm; /* Ancho carta */
+      margin: 0 auto;
+      padding: 2cm;
+    }
 
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #333;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+    .experience-item {
+      margin-bottom: 15px;
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    /* Estilos específicos para impresión */
+    @media print {
+      body {
+        padding: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <!-- partial:index.partial.html -->
-  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <div class="header">
+    <h1>Nicolás David Gómez Garzón</h1>
+    <h2>Data Scientist | Electronic Engineer</h2>
+  </div>
+
+  <div class="contact-info">
+    Bogotá D.C., Colombia | +57 311 246 4981 | ndgomezg@gmail.com
+  </div>
 
   <div class="resume">
     <div class="resume_left">
@@ -20,7 +91,6 @@
       <div class="resume_content">
         <div class="resume_item resume_info">
           <div class="title">
-
             <p class="regular">Data Scientist</p>
             <p class="regular">Electronic Engineer</p>
           </div>
@@ -49,7 +119,6 @@
                 ndgomezg@gmail.com
               </div>
             </li>
-
           </ul>
         </div>
         <div class="resume_item resume_skills">
@@ -57,7 +126,7 @@
             <p class="bold">Skills</p>
           </div>
           <ul>
-             <li>
+            <li>
               <div class="skill_name">
                 LLM
               </div>
@@ -85,51 +154,51 @@
               <div class="skill_per">80%</div>
             </li>
             <li>
-                <li>
-                    <div class="skill_name">
-                      Scikit-learn
-                    </div>
-                    <div class="skill_progress">
-                      <span style="width: 90%;"></span>
-                    </div>
-                    <div class="skill_per">90%</div>
-                  </li>
-                  <li>
-                    <div class="skill_name">
-                      TensorFlow/PyTorch
-                    </div>
-                    <div class="skill_progress">
-                      <span style="width: 85%;"></span>
-                    </div>
-                    <div class="skill_per">85%</div>
-                  </li>
-                  <li>
-                    <div class="skill_name">
-                      PySpark
-                    </div>
-                    <div class="skill_progress">
-                      <span style="width: 80%;"></span>
-                    </div>
-                    <div class="skill_per">80%</div>
-                  </li>
-                  <li>
-                    <div class="skill_name">
-                      Statistical Analysis
-                    </div>
-                    <div class="skill_progress">
-                      <span style="width: 90%;"></span>
-                    </div>
-                    <div class="skill_per">90%</div>
-                  </li>
-                  <li>
-                    <div class="skill_name">
-                      MLOps
-                    </div>
-                    <div class="skill_progress">
-                      <span style="width: 75%;"></span>
-                    </div>
-                    <div class="skill_per">75%</div>
-                  </li>
+              <div class="skill_name">
+                Scikit-learn
+              </div>
+              <div class="skill_progress">
+                <span style="width: 90%;"></span>
+              </div>
+              <div class="skill_per">90%</div>
+            </li>
+            <li>
+              <div class="skill_name">
+                TensorFlow/PyTorch
+              </div>
+              <div class="skill_progress">
+                <span style="width: 85%;"></span>
+              </div>
+              <div class="skill_per">85%</div>
+            </li>
+            <li>
+              <div class="skill_name">
+                PySpark
+              </div>
+              <div class="skill_progress">
+                <span style="width: 80%;"></span>
+              </div>
+              <div class="skill_per">80%</div>
+            </li>
+            <li>
+              <div class="skill_name">
+                Statistical Analysis
+              </div>
+              <div class="skill_progress">
+                <span style="width: 90%;"></span>
+              </div>
+              <div class="skill_per">90%</div>
+            </li>
+            <li>
+              <div class="skill_name">
+                MLOps
+              </div>
+              <div class="skill_progress">
+                <span style="width: 75%;"></span>
+              </div>
+              <div class="skill_per">75%</div>
+            </li>
+            <li>
               <div class="skill_name">
                 Exploratory Data Analysis
               </div>
@@ -192,8 +261,6 @@
               </div>
               <div class="skill_per">100%</div>
             </li>
-
-
           </ul>
         </div>
         <div class="resume_item resume_skills">
@@ -221,8 +288,6 @@
             </li>
           </ul>
         </div>
-        
-
       </div>
     </div>
     <div class="resume_right">
@@ -234,7 +299,6 @@
           strategic decision-making.
           Seeking to contribute to the sustained growth of the business by applying expertise in machine
           learning, statistical analysis, and predictive modeling. </p>
-
       </div>
       <div class="resume_item resume_work">
         <div class="title">
@@ -242,43 +306,36 @@
         </div>
         <ul>
           <li>
-    <div class="date">January 2024 - Present</div>
-    <div class="info">
-        <p class="semi-bold">Data Scientist at Caracol TV</p>
-
-        <p><strong>Forecasting Models</strong></p>
-        <ul>
-            <li>Developed and implemented forecasting models to predict viewership and optimize scheduling.</li>
-        </ul>
-        
-        <p><strong>Motion Recognition Models</strong></p>
-        <ul>
-            <li>Created and refined motion recognition models to enhance entertainment experiences and interactive engagement in company assets.</li>
-        </ul>
-
-        <p><strong>Large Language Models (LLM) for Process Optimization</strong></p>
-        <ul>
-            <li>Leveraged LLMs to streamline content creation, metadata tagging, and other production processes.</li>
-        </ul>
-
-        <p><strong>Cloud Technologies and DevOps</strong></p>
-        <ul>
-            <li>Utilized Azure DevOps for project management, CI/CD pipelines, and version control.</li>
-            <li>Deployed and managed machine learning models and data processing pipelines on AWS.</li>
-        </ul>
-
-        <p><strong>Analytics and Data Team Foundation</strong></p>
-        <ul>
-            <li>Played a key role in defining the architecture and DevOps practices for the establishment and implementation of the company's analytics and data team.</li>
-        </ul>
-    </div>
-</li>
-
+            <div class="date">January 2024 - Present</div>
+            <div class="info">
+              <p class="semi-bold">Data Scientist at Caracol TV</p>
+              <p><strong>Forecasting Models</strong></p>
+              <ul>
+                <li>Developed and implemented forecasting models to predict viewership and optimize scheduling.</li>
+              </ul>
+              <p><strong>Motion Recognition Models</strong></p>
+              <ul>
+                <li>Created and refined motion recognition models to enhance entertainment experiences and interactive engagement in company assets.</li>
+              </ul>
+              <p><strong>Large Language Models (LLM) for Process Optimization</strong></p>
+              <ul>
+                <li>Leveraged LLMs to streamline content creation, metadata tagging, and other production processes.</li>
+              </ul>
+              <p><strong>Cloud Technologies and DevOps</strong></p>
+              <ul>
+                <li>Utilized Azure DevOps for project management, CI/CD pipelines, and version control.</li>
+                <li>Deployed and managed machine learning models and data processing pipelines on AWS.</li>
+              </ul>
+              <p><strong>Analytics and Data Team Foundation</strong></p>
+              <ul>
+                <li>Played a key role in defining the architecture and DevOps practices for the establishment and implementation of the company's analytics and data team.</li>
+              </ul>
+            </div>
+          </li>
           <li>
             <div class="date">July 2022 - January 2024</div>
             <div class="info">
               <p class="semi-bold">Data Scientist at Accenture</p>
-
               <p><strong>Phase 2.0 - Credit Entity (Colombia)</strong></p>
               <ul>
                 <li>Created a product recommendation model based on primary baskets offered by partners to promote
@@ -349,7 +406,6 @@
               <p class="semi-bold">Academic Assistant at Universidad Santo Tomás</p>
               <p><strong>Fundaments of Circuits and Calculus Academic Assistant:</strong></p>
               <ul>
-
                 <li>Assisted professors in preparing materials and resources for Fundamentals of Circuits and Calculus
                   courses.</li>
                 <li>Provided comprehensive support to students, offering tutoring sessions and assistance with
@@ -367,21 +423,20 @@
           <p class="bold">Education</p>
         </div>
         <ul>
-            <li>
+          <li>
             <div class="date">January 2025 - Present</div>
             <div class="info">
-             <p>Master's in Artificial Intelligence</p>
+              <p>Master's in Artificial Intelligence</p>
               <p>Los Andes University</p>
             </div>
           </li>
           <li>
             <div class="date">December 2024 - Present</div>
             <div class="info">
-             <p>Creative Thinking Tools for Success and Leadership Specialization</p>
+              <p>Creative Thinking Tools for Success and Leadership Specialization</p>
               <p>Imperial College London</p>
             </div>
           </li>
-        <li>
           <li>
             <div class="date">January 2017 - December 2022</div>
             <div class="info">
@@ -403,11 +458,8 @@
               <p>A Cloud Guru | A Pluralsight Company</p>
             </div>
           </li>
-          
-          
         </ul>
       </div>
-
       <div class="resume_item resume_education">
         <div class="title">
           <p class="bold">Awards</p>
@@ -441,14 +493,14 @@
           <p class="bold">Projects</p>
         </div>
         <ul>
-            <li>
-                <div class="date">January 2025 - Present</div>
-                <div class="info">
-                  <p class="semi-bold">La Brújula de Datos. A Data science and machine learning personal blog</p>
-                  <p>Personal Project</p>
-                  <p><em>Visit the blog at <a href="https://nicolasdgg.github.io/">https://nicolasdgg.github.io/</a></em></p>
-                </div>
-              </li>
+          <li>
+            <div class="date">January 2025 - Present</div>
+            <div class="info">
+              <p class="semi-bold">La Brújula de Datos. A Data science and machine learning personal blog</p>
+              <p>Personal Project</p>
+              <p><em>Visit the blog at <a href="https://nicolasdgg.github.io/">https://nicolasdgg.github.io/</a></em></p>
+            </div>
+          </li>
           <li>
             <div class="date">April 2021 - December 2021</div>
             <div class="info">
@@ -473,7 +525,6 @@
               <p>General José María Córdoba Military Cadets School</p>
             </div>
           </li>
-          
         </ul>
       </div>
       <div class="resume_item resume_education">
@@ -507,13 +558,8 @@
           </li>
         </ul>
       </div>
-
-
-
     </div>
   </div>
-  <!-- partial -->
-
 </body>
 
 </html>
